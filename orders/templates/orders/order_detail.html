@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order Detail</title>
+</head>
+<body>
+    <h2>Order Detail</h2>
+    <p>Product: {{ order.product.name }}</p>
+    <p>Quantity: {{ order.quantity }}</p>
+    <p>Status: {{ order.status }}</p>
+    <p>Customer: {{ order.customer.username }}</p>
+    <p>Created at: {{ order.created_at }}</p>
+    <a href="{% url 'order_list' %}">Back to orders</a>
+</body>
+</html>

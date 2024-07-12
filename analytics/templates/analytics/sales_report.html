@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sales Report</title>
+</head>
+<body>
+    <h2>Sales Report</h2>
+    <ul>
+        {% for report in reports %}
+            <li>
+                Vendor: {{ report.vendor.username }} - Total Sales: {{ report.total_sales }} - Date: {{ report.report_date }}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
